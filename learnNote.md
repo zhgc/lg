@@ -18,3 +18,10 @@
     - `$ git status`
     - `$ git diff`
     - `git status`是查看工作区状态，是否有文件被修改过，而`git diff`则是用来查看具体有什么内容被修改了。
++ 查看日志
+    - `$ git log`
+    - 显示所有版本
+    - `$ git log --pretty=oneline`
+    - 一个版本显示一行
++ 版本回退
+    - `$ git reset --head HEAD^`
