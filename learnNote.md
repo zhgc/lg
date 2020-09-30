@@ -42,7 +42,17 @@
     - `ssh-keygen -t rsa -C "邮箱" `通过此命令创建密钥
     - 将公钥添加到github账户，用来确认操作是我干的
     - 将本地仓库上传到github。
-        + `git remote add origin git@github.com:<我的用户名>/<想上传到gibhub的仓库>.git`   #这一步是建立远程仓库和本地仓库的关联关系
-        + `git push -u origin master` # 这一步将本地内容推送到远程，同时创建本地master和远程master的关联。
-        + `git push origin master` #第一次设置了-u参数之后，便可以直接推送了。
-
+        * `git remote add origin git@github.com:<我的用户名>/<想上传到gibhub的仓库>.git`   #这一步是建立远程仓库和本地仓库的关联关系
+        * `git push -u origin master` # 这一步将本地内容推送到远程，同时创建本地master和远程master的关联。
+        * `git push origin master` #第一次设置了-u参数之后，便可以直接推送了。
+    - Note: 如果遇到什么需要警告之类的，输入yes，y即可。他只是再确认是不是你自己在操作。
+    - 克隆仓库：
+        * 在本地随便什么目录下进行操作，准备好一个远程目录
+        * `git clone git@github.com:<我的用户名>/<我想复制的远程仓库名>.git` # 这条命令直接创建目录并将其与远程仓库关联。
++分支管理:
+    - `git checkout -b dev` #创建并切换到一个叫dev的分支。其中-b参数表示创建并切换。
+    - 上面一条命令相当于两条命令的合写：
+        * `git branch dev` #创建分支dev
+        * `git checkout dev` #切换到分支dev
+    - `git branch` #这条命令相当于查看存在的所有分支。其中当前的分支会被用`*`标记。
+    - 
