@@ -62,4 +62,4 @@
     - what im writing .my eng is to bad.
     - a new way to switch branchs
         * `git switch -c dev` mean create and switch to a new branch dev.
-        * `git switch -d dev` mean delate branch dev.    - 
+        * `git switch -d dev` mean delate branch dev.    - made,wohaishiganlezhebishi,woyihoukendingjuishenbaimingliede.
