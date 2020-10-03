@@ -55,4 +55,4 @@
         * `git branch dev` #创建分支dev
         * `git checkout dev` #切换到分支dev
     - `git branch` #这条命令相当于查看存在的所有分支。其中当前的分支会被用`*`标记。
-    - 
+    - i can't insert chinese in 9se termux environment,within gboard
