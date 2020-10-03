@@ -56,3 +56,8 @@
         * `git checkout dev` #切换到分支dev
     - `git branch` #这条命令相当于查看存在的所有分支。其中当前的分支会被用`*`标记。
     - i can't insert chinese in 9se termux environment,within gboard
+    - `git checkout -b dev` equal the two step.
+    - use merge command make two branchs to one.
+    - `git merge dev` made dev to this branch.
+    - what im writing .my eng is to bad.
+
