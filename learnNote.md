@@ -60,4 +60,5 @@
     - use merge command make two branchs to one.
     - `git merge dev` made dev to this branch.
     - what im writing .my eng is to bad.
-
+    - a new way to switch branchs
+        * `git switch -c dev` mean create and switch to a new branch dev.
