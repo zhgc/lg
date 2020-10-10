@@ -15,3 +15,16 @@
 
 现在我那这个文件试一试git的合并功能。命令是
 `git merge fearute1`
+<<<<<<< HEAD
+=======
+
+操作完毕，得到经验：
+1、在switch的时候，要把工作区暂存一下，不然可能丢失进度
+2、这点很重要，在merge之前，应该add和commit一下。
+
+现在开始学习bug分支的内容，目前已经将学过的内容梳理一遍，bug分支之后就是新内容了。
+
+现在开始试试stash。
+
+现在开始试试`cherry-pick`命令.
+>>>>>>> 954bf08... try cherry-pick command
