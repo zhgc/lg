@@ -50,6 +50,7 @@
         * 在本地随便什么目录下进行操作，准备好一个远程目录
         * `git clone git@github.com:<我的用户名>/<我想复制的远程仓库名>.git` # 这条命令直接创建目录并将其与远程仓库关联。
 +分支管理:
+    - `git log --graph` 这个命令可以以可视化的形式查看git 分支与合并情况。
     - `git checkout -b dev` #创建并切换到一个叫dev的分支。其中-b参数表示创建并切换。
     - 上面一条命令相当于两条命令的合写：
         * `git branch dev` #创建分支dev
@@ -59,6 +60,11 @@
     - `git checkout -b dev` equal the two step.
     - use merge command make two branchs to one.
     - `git merge dev` made dev to this branch.
+    - 如果我想要以noFastforward模式合并分支，也就是说，避免在删除分支之后丢失分支信息的形式。
+        * `git switch -c dev`创建并切换到新的分支dev。
+        * `git add <随便什么文件>` 这一步在新分支上随便做点什么。
+        * `git switch master` 切换回主分支
+        * `git merge --no-ff -m "以非快速模式合并两个分支" dev` 这一步合并两个分支，但使用非快速模式，因此不会丢失分支信息。同时，该模式会生成一个commit，所以需要使用 -m 参数。
     - what im writing .my eng is to bad.
     - a new way to switch branchs
         * `git switch -c dev` mean create and switch to a new branch dev.
