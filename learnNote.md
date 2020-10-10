@@ -63,3 +63,10 @@
     - a new way to switch branchs
         * `git switch -c dev` mean create and switch to a new branch dev.
         * `git switch -d dev` mean delate branch dev.    - made,wohaishiganlezhebishi,woyihoukendingjuishenbaimingliede.
+    - `git stash` 该命令表示储存当前工作区的内容，待处理完其他分支之后再回来处理该分支。
+    - `git stash list` 该命令展示所有暂存的工作区内容。通过下面两个命令来恢复。
+        * `git stash apply` 该命令应用了储存的工作区内容，但是并不删除stash内容，如果想要删除的话，要通过`git stash drop`命令来删除。
+        * `git stash pop` 该命令恢复stash，并且将其删除。
+        * `git stash apply stash@{0} `这条命令表示指定恢复储存的工作区内容编号stash@{0}，在stash中可以储存多个工作区内容，这也就是为什么要使用`git stash list`这个命令的原因。
+    - 如果我在一个分支上修复了bug，但是同时，我想到，还有很多同源的分支存在这个bug，那么我应该怎么办呢？难道在所有的分支上都修一遍吗？万一有一千条分支存在这个bug呢？
+    - 
