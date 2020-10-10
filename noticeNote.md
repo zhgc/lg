@@ -25,3 +25,5 @@
 现在开始试试stash。
 
 现在开始试试`cherry-pick`命令.
+
+yes
