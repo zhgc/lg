@@ -93,3 +93,15 @@
 + 标签管理：
     - 我们先弄明白为什么要有tag这东西。commitID这个东西可以代表版本，但是这是一串很长的字符串，并不直观，所以用tag来表示版本。
     - 创建标签：`git tag v1.0`即可。
+    - 或者我们也可以在历史上任意一次提交中添加tag。只需要`git tag v0.1 <commitID>`这样，在后面添加我们想要打tag的那次提交的commitID即可。
+    - 当我们想要查看tag的时候，可以使用`git tag`命令。
+    - 当我们想要查看具体tag的信息的时候，使用`git show <tagName>`,这条命令会直接显示tag代表的这次提交的内容，甚至还会显示具体有什么修改。
+    - 可以给标签注释以这种形式`git tag -a v0.1 -m'version0.1' <commitID>` 这句话当中
+        * -a 代表版本名
+        * -m 代表版本的说明文字
+    - `git tag -d v0.1`很明显是删除标签的命令，不用细说。 
+    - 推送标签到远程`git push origin v0.1`
+    - 推送全部标签到远程`git push origin --tags`
+    - 如何删除已经推送到远程的标签？
+        * 1、先在本地删除
+        * 2、`git push origin :refs/tags/<tagName>`
