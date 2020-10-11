@@ -83,8 +83,9 @@
 	* 注意：git add 和git commit这两个命令需要常用，在合并和cherry-pick的时候，或者stash命令，总之，在merge和cherry的时候应该保持工作区是干净的。
     - 有的时候，有一些分支我们已经废弃不用了，但它还有内容没有合并到主分支里，这个时候，如果要删除它，git是会提醒我们，这个操作不行的。因为分支没有被合并，一旦删除就会丢失内容，此时就需要强行删除 用 -D参数
     - 多人开发：好的，以后我打算在dev分支上进行git学习。
-    - `git remote -v`
-    - `git push origin <branchName>`
-    - `git switch -c <newBranchName>`
-    - `git branch --set-upstream <branchName> origin/<branchName>`
+    - `git remote -v` 此命令查看远程库的信息。
+    - `git push origin <branchName>` 此命令将推送本地分支到远程
+    - `git switch -c <newBranchName>`此命令创建并切换
+    - `git switch -c <newBranchName> origin/<BranchName>`此命令创建并切换分支并且**创建本地分支到远程的追踪**
+    - `git branch --set-upstream-to=origin/<branchName> <branchName>`此命令创建本地<branchName>到远程<branch>的追踪。
 
