@@ -27,3 +27,13 @@
 现在开始试试`cherry-pick`命令.
 
 yes
+
+
+注意：
+当我们这样写的时候，发生了什么？
+
+`git push origin master` 将本地的master和远程同名的master合并。
+相当于`git push origin master:master`
+
+`git pull origin master` 这只是将远程的origin master拉取并且合并到**当前**的分支。
+相当于`git pull origin master:<当前分支>`
