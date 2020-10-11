@@ -88,4 +88,5 @@
     - `git switch -c <newBranchName>`此命令创建并切换
     - `git switch -c <newBranchName> origin/<BranchName>`此命令创建并切换分支并且**创建本地分支到远程的追踪**
     - `git branch --set-upstream-to=origin/<branchName> <branchName>`此命令创建本地<branchName>到远程<branch>的追踪。
+    - we don't know witch originbranch we pushing or pulling before created track between local branch and origin branch. now just `git pull`or `git push`is enough.
 
