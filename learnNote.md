@@ -90,3 +90,6 @@
     - `git branch --set-upstream-to=origin/<branchName> <branchName>`此命令创建本地<branchName>到远程<branch>的追踪。
     - we don't know witch originbranch we pushing or pulling before created track between local branch and origin branch. now just `git pull`or `git push`is enough.
     - 所以说，现在这样整，不就相当于两个人在协同吗？实际上是我的电脑和我的手机。
++ 标签管理：
+    - 我们先弄明白为什么要有tag这东西。commitID这个东西可以代表版本，但是这是一串很长的字符串，并不直观，所以用tag来表示版本。
+    - 创建标签：`git tag v1.0`即可。
